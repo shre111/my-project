@@ -1,0 +1,62 @@
+.HeaderMainMenu {
+  /* Your existing styles for HeaderMainMenu */
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-item {
+  margin-right: 20px;
+  position: relative;
+}
+
+.menu-item span {
+  cursor: pointer;
+}
+
+.submenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.menu-item.active span,
+.menu-item:hover span {
+  color: blue; /* Change this to your desired hover color */
+}
+
+.menu-item.selected span,
+.menu-item.active.selected span {
+  color: blue; /* Change this to your desired selected color */
+}
+
+.submenu li {
+  margin-right: 0;
+}
+
+.submenu li span {
+  display: block;
+  padding: 10px;
+}
+
+.submenu li:hover span {
+  color: blue; /* Change this to your desired hover color for sub-menu items */
+}
+
+.submenu li.active span,
+.submenu li.selected span,
+.submenu li:hover.selected span {
+  color: blue; /* Change this to your desired selected color for sub-menu items */
+}
